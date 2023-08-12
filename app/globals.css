@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  /* @apply bg-gradient-to-r from-blue-500 via-cyan-400 to-green-300; */
+  background-image: url("/bg.jpg");
+}
+
+#__next {
+  height: 100%;
+  width: 100%;
+}
