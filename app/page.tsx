@@ -50,7 +50,7 @@ export default function Home() {
           </div>
         </>
       ) : (
-        <div className="text-white text-center h-fit mb-[2rem]">
+        <div className="text-black text-center h-fit mb-[2rem]">
           <h2 className="text-3xl font-semibold mb-4">
             {error ? "City not found" : "Welcome to the Weather Forecast App"}
           </h2>
