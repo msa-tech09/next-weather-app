@@ -32,7 +32,7 @@ const WeatherForecastList: React.FC<WeatherForecastListProps> = ({ data }) => {
   );
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 w-full">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
       {data.forecast.forecastday.map((dayForecast, index) => (
         <WeatherForecastCard
           key={index}

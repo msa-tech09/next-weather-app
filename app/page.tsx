@@ -10,10 +10,7 @@ export default function Home() {
   const [location, setLocation] = useState("");
   const [error, setError] = useState("");
 
-  const handleSearch = async (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key !== "Enter") return;
-
-    e.preventDefault();
+  const handleSearch = async () => {
     try {
       const response = await fetch(`/api/weather?location=${location}`);
       if (response.ok) {
@@ -33,7 +30,6 @@ export default function Home() {
       setData({});
     }
   };
-
   return (
     <div className="bg-white/25 w-full rounded-lg flex flex-col h-fit">
       <div className="flex flex-col md:flex-row justify-between items-center p-12">
